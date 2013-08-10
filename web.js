@@ -2,6 +2,7 @@
  var app = express();
  app.use(express.logger());
  var fs = require('fs');
+ var buf = require('buf');
 
  app.get('/', function(request, response) {
    response.send(fs.readFileSync(buf.toString("index.html")));
