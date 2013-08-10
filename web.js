@@ -5,7 +5,7 @@
  var buf = require('buf');
 
  app.get('/', function(request, response) {
-   response.send(fs.readFileSync(buf.toString("index.html")));
+   response.send(fs.readFileSync('index.html'));
  });
 
  var port = process.env.PORT || 5000;
